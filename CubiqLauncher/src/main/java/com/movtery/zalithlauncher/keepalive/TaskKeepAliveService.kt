@@ -83,7 +83,7 @@ class TaskKeepAliveService : Service() {
         )
 
         val notification: Notification = NotificationCompat.Builder(this, data.channelId)
-            .setContentTitle("Cubiq Download Service")
+            .setContentTitle("PJ Download Service")
             .setContentText("Game Files Are Being Downloaded")
             .setOngoing(true)
             .setPriority(NotificationCompat.PRIORITY_LOW)

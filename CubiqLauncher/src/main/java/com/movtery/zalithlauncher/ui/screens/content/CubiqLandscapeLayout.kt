@@ -183,7 +183,7 @@ fun LandscapeLauncherLayout(
                 }
                 Column(modifier = Modifier.weight(1f)) {
                     Text(
-                        text = account?.username ?: "Cubiq",
+                        text = account?.username ?: "PJ",
                         color = Color.White,
                         fontFamily = MinecraftFontFamily,
                         fontWeight = FontWeight.Bold,
@@ -576,7 +576,7 @@ private fun LandscapePlayScreen(
                                 text = {
                                     Text(
                                         text = "+ Manage Installations",
-                                        color = Color(0xFF55FF55),
+                                        color = Color(0xFF2ECC71),
                                         fontFamily = MinecraftFontFamily,
                                         fontWeight = FontWeight.Bold
                                     )
@@ -695,7 +695,7 @@ private fun LandscapeNavButton(
     val bgModifier = if (isActive) {
         Modifier
             .background(Color(0xFF1E3A19), RoundedCornerShape(6.dp))
-            .border(BorderStroke(1.5.dp, Color(0xFF55FF55)), RoundedCornerShape(6.dp))
+            .border(BorderStroke(1.5.dp, Color(0xFF2ECC71)), RoundedCornerShape(6.dp))
     } else {
         Modifier.background(Color.Transparent)
     }
@@ -797,7 +797,7 @@ fun ForkWarningDialog(
                 // Body content
                 Column(verticalArrangement = Arrangement.spacedBy(10.dp)) {
                     Text(
-                        text = "Cubiq Launcher is an independent, unofficial fork of Zalith Launcher 2, licensed under the GNU General Public License v3.0 (GPLv3).",
+                        text = "PJ Launcher is a modified fork of Cubiq Launcher (created by VivxKumar07) and Zalith Launcher 2, licensed under the GNU General Public License v3.0 (GPLv3).",
                         color = Color(0xFFE2E2E2),
                         fontFamily = MinecraftFontFamily,
                         fontSize = 11.5.sp,
@@ -822,7 +822,7 @@ fun ForkWarningDialog(
                     }
 
                     Text(
-                        text = "All modifications and source code comply with GPLv3. For support or bug reports, please use the official Cubiq Launcher community.",
+                        text = "All modifications and source code comply with GPLv3. For support or bug reports, please use the PJ Launcher GitHub repository.",
                         color = Color(0xFF888888),
                         fontFamily = MinecraftFontFamily,
                         fontSize = 10.sp,

@@ -121,7 +121,7 @@ fun AboutInfoScreen(
                         )
 
                         Text(
-                            text = "Notice: Cubiq Launcher is an unofficial version (fork) of Zalith Launcher 2, modified under the GNU General Public License v3.",
+                            text = "Notice: PJ Launcher is a modified fork of Cubiq Launcher (by VivxKumar07) and Zalith Launcher 2, modified under the GNU General Public License v3.",
                             style = MaterialTheme.typography.bodySmall,
                             color = MaterialTheme.colorScheme.onSurfaceVariant
                         )
@@ -192,7 +192,7 @@ fun AboutInfoScreen(
                             style = MaterialTheme.typography.bodySmall
                         )
                         Text(
-                            text = "• Official Cubiq GitHub news feed and automated release update dialog",
+                            text = "• PJ Launcher GitHub news feed and automated release update dialog",
                             style = MaterialTheme.typography.bodySmall
                         )
                         Text(

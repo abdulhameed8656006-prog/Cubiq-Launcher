@@ -119,7 +119,7 @@ fun MinecraftNewsScreen(
                         .clip(RoundedCornerShape(3.dp))
                         .background(if (selectedTab == 0) Color(0xFF2E6930) else Color(0xFF222428))
                         .border(
-                            BorderStroke(1.dp, if (selectedTab == 0) Color(0xFF55FF55) else Color(0xFF3A3A3E)),
+                            BorderStroke(1.dp, if (selectedTab == 0) Color(0xFF2ECC71) else Color(0xFF3A3A3E)),
                             RoundedCornerShape(3.dp)
                         )
                         .clickable {
@@ -172,7 +172,7 @@ fun MinecraftNewsScreen(
                                 modifier = Modifier
                                     .size(8.dp)
                                     .clip(RoundedCornerShape(4.dp))
-                                    .background(Color(0xFF55FF55))
+                                    .background(Color(0xFF2ECC71))
                             )
                         }
                     }
@@ -318,12 +318,12 @@ private fun NewsArticleCard(
                 modifier = Modifier
                     .clip(RoundedCornerShape(2.dp))
                     .background(Color(0xFF283824))
-                    .border(BorderStroke(1.dp, Color(0xFF3C8527)), RoundedCornerShape(2.dp))
+                    .border(BorderStroke(1.dp, Color(0xFF1E88E5)), RoundedCornerShape(2.dp))
                     .padding(horizontal = 8.dp, vertical = 3.dp)
             ) {
                 Text(
                     text = news.category.uppercase(),
-                    color = Color(0xFF55FF55),
+                    color = Color(0xFF2ECC71),
                     fontFamily = MinecraftFontFamily,
                     fontWeight = FontWeight.Bold,
                     fontSize = 9.5.sp

@@ -50,7 +50,7 @@ class GameService : Service() {
         val data = NotificationChannelData.GAME_SERVICE_CHANNEL
 
         val notification: Notification = NotificationCompat.Builder(this, data.channelId)
-            .setContentTitle("Cubiq Game Service")
+            .setContentTitle("PJ Game Service")
             .setContentText("Minecraft Is Running")
             .setOngoing(true)
             .setPriority(NotificationCompat.PRIORITY_LOW)

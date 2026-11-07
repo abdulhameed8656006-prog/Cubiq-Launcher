@@ -8,7 +8,8 @@
 
 ## Changes in PJ Launcher
 - Renamed from Cubiq Launcher to PJ Launcher
-- New blue and green color theme
+- New blue and green color theme (app and website)
+- Update checker and project links point to this fork
 
 ## Upstream Projects
 - [Zalith Launcher 2](https://github.com/MovTery/ZalithLauncher2)

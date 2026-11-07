@@ -53,7 +53,7 @@ fun CubiqUpdateDialog(
                 .fillMaxWidth(0.92f)
                 .clip(RoundedCornerShape(4.dp))
                 .background(Color(0xFF1E1E20))
-                .border(BorderStroke(2.dp, Color(0xFF3C8527)), RoundedCornerShape(4.dp))
+                .border(BorderStroke(2.dp, Color(0xFF1E88E5)), RoundedCornerShape(4.dp))
                 .padding(18.dp)
         ) {
             // Header: Update Available
@@ -65,7 +65,7 @@ fun CubiqUpdateDialog(
                 Column {
                     Text(
                         text = "NEW VERSION AVAILABLE",
-                        color = Color(0xFF55FF55),
+                        color = Color(0xFF2ECC71),
                         fontFamily = MinecraftFontFamily,
                         fontWeight = FontWeight.Bold,
                         fontSize = 15.sp

@@ -201,7 +201,7 @@ fun MinecraftInstallationsScreen(
                         .border(
                             BorderStroke(
                                 1.dp,
-                                if (searchQuery.isNotEmpty()) Color(0xFF55FF55) else Color(0xFF383838)
+                                if (searchQuery.isNotEmpty()) Color(0xFF2ECC71) else Color(0xFF383838)
                             ),
                             RoundedCornerShape(3.dp)
                         )
@@ -222,7 +222,7 @@ fun MinecraftInstallationsScreen(
                                 fontFamily = MinecraftFontFamily,
                                 fontSize = 12.sp
                             ),
-                            cursorBrush = SolidColor(Color(0xFF55FF55)),
+                            cursorBrush = SolidColor(Color(0xFF2ECC71)),
                             decorationBox = { innerTextField ->
                                 if (searchQuery.isEmpty()) {
                                     Text(
@@ -438,7 +438,7 @@ fun MinecraftInstallationsScreen(
                 title = {
                     Text(
                         text = "INSTALLATION READY",
-                        color = Color(0xFF55FF55),
+                        color = Color(0xFF2ECC71),
                         fontFamily = MinecraftFontFamily,
                         fontWeight = FontWeight.Bold,
                         fontSize = 15.sp
@@ -495,7 +495,7 @@ private fun InstallationFilterCheckbox(
             checked = checked,
             onCheckedChange = onCheckedChange,
             colors = CheckboxDefaults.colors(
-                checkedColor = Color(0xFF3C8527),
+                checkedColor = Color(0xFF1E88E5),
                 checkmarkColor = Color.White,
                 uncheckedColor = Color(0xFF666666)
             ),
@@ -535,7 +535,7 @@ private fun InstallationCardItem(
             .border(
                 BorderStroke(
                     1.dp,
-                    if (isCurrent) Color(0xFF3C8527) else Color(0xFF2E3033)
+                    if (isCurrent) Color(0xFF1E88E5) else Color(0xFF2E3033)
                 ),
                 RoundedCornerShape(3.dp)
             )
@@ -586,12 +586,12 @@ private fun InstallationCardItem(
                         modifier = Modifier
                             .clip(RoundedCornerShape(2.dp))
                             .background(Color(0xFF1E3A1E))
-                            .border(BorderStroke(1.dp, Color(0xFF3C8527)), RoundedCornerShape(2.dp))
+                            .border(BorderStroke(1.dp, Color(0xFF1E88E5)), RoundedCornerShape(2.dp))
                             .padding(horizontal = 4.dp, vertical = 1.dp)
                     ) {
                         Text(
                             text = "ACTIVE",
-                            color = Color(0xFF55FF55),
+                            color = Color(0xFF2ECC71),
                             fontFamily = MinecraftFontFamily,
                             fontWeight = FontWeight.Bold,
                             fontSize = 9.sp,
@@ -666,7 +666,7 @@ private fun InstallationCardItem(
                     text = {
                         Text(
                             text = "Select as Active",
-                            color = Color(0xFF55FF55),
+                            color = Color(0xFF2ECC71),
                             fontFamily = MinecraftFontFamily
                         )
                     },
@@ -778,7 +778,7 @@ fun InstallationModsDialog(
                 ) {
                     Text(
                         text = "MANAGE MODS",
-                        color = Color(0xFF55FF55),
+                        color = Color(0xFF2ECC71),
                         fontFamily = MinecraftFontFamily,
                         fontWeight = FontWeight.Bold,
                         fontSize = 15.sp,
@@ -834,7 +834,7 @@ fun InstallationModsDialog(
                                 fontFamily = MinecraftFontFamily,
                                 fontSize = 11.sp
                             ),
-                            cursorBrush = SolidColor(Color(0xFF55FF55)),
+                            cursorBrush = SolidColor(Color(0xFF2ECC71)),
                             singleLine = true,
                             decorationBox = { innerTextField ->
                                 if (searchQuery.isEmpty()) {
@@ -917,7 +917,7 @@ fun InstallationModsDialog(
                                     .fillMaxWidth()
                                     .clip(RoundedCornerShape(2.dp))
                                     .background(if (isEnabled) Color(0xFF25272B) else Color(0xFF1B1B1C))
-                                    .border(1.dp, if (isEnabled) Color(0xFF3C8527) else Color(0xFF333333), RoundedCornerShape(2.dp))
+                                    .border(1.dp, if (isEnabled) Color(0xFF1E88E5) else Color(0xFF333333), RoundedCornerShape(2.dp))
                                     .clickable {
                                         val newFile = if (isEnabled) {
                                             File(file.parentFile, file.name + ".disabled")
@@ -935,7 +935,7 @@ fun InstallationModsDialog(
                                     contentDescription = null,
                                     modifier = Modifier.size(20.dp),
                                     colorFilter = androidx.compose.ui.graphics.ColorFilter.tint(
-                                        if (isEnabled) Color(0xFF55FF55) else Color(0xFF777777)
+                                        if (isEnabled) Color(0xFF2ECC71) else Color(0xFF777777)
                                     )
                                 )
                                 Spacer(modifier = Modifier.width(8.dp))
@@ -951,7 +951,7 @@ fun InstallationModsDialog(
                                     )
                                     Text(
                                         text = if (isEnabled) ".jar (ACTIVE)" else ".jar.disabled (INACTIVE)",
-                                        color = if (isEnabled) Color(0xFF55FF55) else Color(0xFFFF5555),
+                                        color = if (isEnabled) Color(0xFF2ECC71) else Color(0xFFFF5555),
                                         fontFamily = MinecraftFontFamily,
                                         fontSize = 10.sp
                                     )
@@ -968,7 +968,7 @@ fun InstallationModsDialog(
                                         refreshTrigger++
                                     },
                                     colors = CheckboxDefaults.colors(
-                                        checkedColor = Color(0xFF3C8527),
+                                        checkedColor = Color(0xFF1E88E5),
                                         checkmarkColor = Color.White,
                                         uncheckedColor = Color(0xFF555555)
                                     ),
@@ -1131,7 +1131,7 @@ private fun NewInstallationDialog(
                                 .border(
                                     BorderStroke(
                                         if (isSelected) 2.dp else 1.dp,
-                                        if (isSelected) Color(0xFF55FF55) else Color(0xFF383838)
+                                        if (isSelected) Color(0xFF2ECC71) else Color(0xFF383838)
                                     ),
                                     RoundedCornerShape(4.dp)
                                 )
@@ -1174,7 +1174,7 @@ private fun NewInstallationDialog(
                             fontFamily = MinecraftFontFamily,
                             fontSize = 12.sp
                         ),
-                        cursorBrush = SolidColor(Color(0xFF55FF55)),
+                        cursorBrush = SolidColor(Color(0xFF2ECC71)),
                         decorationBox = { innerTextField ->
                             if (name.isEmpty()) {
                                 Text(
@@ -1210,7 +1210,7 @@ private fun NewInstallationDialog(
                 ) {
                     Text(
                         text = "Minecraft $selectedVersion",
-                        color = Color(0xFF55FF55),
+                        color = Color(0xFF2ECC71),
                         fontFamily = MinecraftFontFamily,
                         fontWeight = FontWeight.Bold,
                         fontSize = 13.sp
@@ -1254,7 +1254,7 @@ private fun NewInstallationDialog(
                                     fontFamily = MinecraftFontFamily,
                                     fontSize = 11.sp
                                 ),
-                                cursorBrush = SolidColor(Color(0xFF55FF55)),
+                                cursorBrush = SolidColor(Color(0xFF2ECC71)),
                                 decorationBox = { innerTextField ->
                                     if (versionSearchQuery.isEmpty()) {
                                         Text(
@@ -1280,7 +1280,7 @@ private fun NewInstallationDialog(
                                 modifier = Modifier
                                     .weight(1f)
                                     .clip(RoundedCornerShape(2.dp))
-                                    .background(if (filterOnlyReleases) Color(0xFF3C8527) else Color(0xFF28282A))
+                                    .background(if (filterOnlyReleases) Color(0xFF1E88E5) else Color(0xFF28282A))
                                     .clickable { filterOnlyReleases = true }
                                     .padding(vertical = 4.dp),
                                 contentAlignment = Alignment.Center
@@ -1291,7 +1291,7 @@ private fun NewInstallationDialog(
                                 modifier = Modifier
                                     .weight(1f)
                                     .clip(RoundedCornerShape(2.dp))
-                                    .background(if (!filterOnlyReleases) Color(0xFF3C8527) else Color(0xFF28282A))
+                                    .background(if (!filterOnlyReleases) Color(0xFF1E88E5) else Color(0xFF28282A))
                                     .clickable { filterOnlyReleases = false }
                                     .padding(vertical = 4.dp),
                                 contentAlignment = Alignment.Center
@@ -1317,7 +1317,7 @@ private fun NewInstallationDialog(
                                         .border(
                                             BorderStroke(
                                                 1.dp,
-                                                if (isSelected) Color(0xFF55FF55) else Color(0xFF303030)
+                                                if (isSelected) Color(0xFF2ECC71) else Color(0xFF303030)
                                             ),
                                             RoundedCornerShape(2.dp)
                                         )
@@ -1331,7 +1331,7 @@ private fun NewInstallationDialog(
                                 ) {
                                     Text(
                                         text = ver.id,
-                                        color = if (isSelected) Color(0xFF55FF55) else Color.White,
+                                        color = if (isSelected) Color(0xFF2ECC71) else Color.White,
                                         fontFamily = MinecraftFontFamily,
                                         fontWeight = if (isSelected) FontWeight.Bold else FontWeight.Normal,
                                         fontSize = 11.5.sp
@@ -1376,7 +1376,7 @@ private fun NewInstallationDialog(
                                         .clip(RoundedCornerShape(3.dp))
                                         .background(
                                             when {
-                                                isSelected -> Color(0xFF3C8527)
+                                                isSelected -> Color(0xFF1E88E5)
                                                 !isSupported -> Color(0xFF1B1B1D)
                                                 else -> Color(0xFF28282A)
                                             }
@@ -1385,7 +1385,7 @@ private fun NewInstallationDialog(
                                             BorderStroke(
                                                 1.dp,
                                                 when {
-                                                    isSelected -> Color(0xFF55FF55)
+                                                    isSelected -> Color(0xFF2ECC71)
                                                     !isSupported -> Color(0xFF252528)
                                                     else -> Color(0xFF3C3C3E)
                                                 }

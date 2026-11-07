@@ -183,7 +183,7 @@ fun MinecraftModsScreen(
                         .fillMaxWidth()
                         .clip(RoundedCornerShape(4.dp))
                         .background(Color(0xFF1A241C))
-                        .border(BorderStroke(1.dp, Color(0xFF3C8527)), RoundedCornerShape(4.dp))
+                        .border(BorderStroke(1.dp, Color(0xFF1E88E5)), RoundedCornerShape(4.dp))
                         .padding(12.dp)
                 ) {
                     Row(
@@ -194,7 +194,7 @@ fun MinecraftModsScreen(
                         Column(modifier = Modifier.weight(1f)) {
                             Text(
                                 text = "ACTIVE: ${currentVersion.getVersionName()}",
-                                color = Color(0xFF55FF55),
+                                color = Color(0xFF2ECC71),
                                 fontFamily = MinecraftFontFamily,
                                 fontWeight = FontWeight.Bold,
                                 fontSize = 13.sp
@@ -270,7 +270,7 @@ fun MinecraftModsScreen(
                                 Icon(
                                     painter = painterResource(item.iconRes),
                                     contentDescription = item.title,
-                                    tint = Color(0xFF55FF55),
+                                    tint = Color(0xFF2ECC71),
                                     modifier = Modifier.size(24.dp)
                                 )
                             }
@@ -297,7 +297,7 @@ fun MinecraftModsScreen(
                                     ) {
                                         Text(
                                             text = item.badge,
-                                            color = Color(0xFF55FF55),
+                                            color = Color(0xFF2ECC71),
                                             fontFamily = MinecraftFontFamily,
                                             fontSize = 9.sp,
                                             fontWeight = FontWeight.Bold

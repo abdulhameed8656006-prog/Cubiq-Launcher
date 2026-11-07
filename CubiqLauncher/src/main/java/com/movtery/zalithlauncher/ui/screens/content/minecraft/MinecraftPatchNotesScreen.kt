@@ -176,7 +176,7 @@ fun MinecraftPatchNotesScreen(
                             showReleases = it
                         },
                         colors = CheckboxDefaults.colors(
-                            checkedColor = Color(0xFF3C8527),
+                            checkedColor = Color(0xFF1E88E5),
                             checkmarkColor = Color.White,
                             uncheckedColor = Color(0xFF666666)
                         ),
@@ -208,7 +208,7 @@ fun MinecraftPatchNotesScreen(
                             showSnapshots = it
                         },
                         colors = CheckboxDefaults.colors(
-                            checkedColor = Color(0xFF3C8527),
+                            checkedColor = Color(0xFF1E88E5),
                             checkmarkColor = Color.White,
                             uncheckedColor = Color(0xFF666666)
                         ),

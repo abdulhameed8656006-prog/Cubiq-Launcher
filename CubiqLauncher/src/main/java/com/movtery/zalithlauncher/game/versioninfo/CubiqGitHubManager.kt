@@ -1,7 +1,7 @@
 /*
  * Cubiq Launcher
  * GitHub Releases & Announcements Manager
- * Connects to VivxKumar07/Cubiq-Launcher repository for authentic updates and announcements.
+ * Connects to abdulhameed8656006-prog/Cubiq-Launcher repository for authentic updates and announcements.
  */
 
 package com.movtery.zalithlauncher.game.versioninfo
@@ -36,7 +36,7 @@ data class CubiqReleaseItem(
 
 object CubiqGitHubManager {
     private const val TAG = "CubiqGitHub"
-    private const val URL_RELEASES = "https://api.github.com/repos/VivxKumar07/Cubiq-Launcher/releases"
+    private const val URL_RELEASES = "https://api.github.com/repos/abdulhameed8656006-prog/Cubiq-Launcher/releases"
 
     private val scope = CoroutineScope(SupervisorJob() + Dispatchers.IO)
 
@@ -87,7 +87,7 @@ object CubiqGitHubManager {
                 val title = obj.get("name")?.asString?.ifBlank { tagName } ?: tagName
                 val body = obj.get("body")?.asString ?: "No changelog provided."
                 val publishedAt = obj.get("published_at")?.asString?.take(10) ?: ""
-                val htmlUrl = obj.get("html_url")?.asString ?: "https://github.com/VivxKumar07/Cubiq-Launcher/releases"
+                val htmlUrl = obj.get("html_url")?.asString ?: "https://github.com/abdulhameed8656006-prog/Cubiq-Launcher/releases"
 
                 var downloadUrl: String? = null
                 val assets = obj.getAsJsonArray("assets")

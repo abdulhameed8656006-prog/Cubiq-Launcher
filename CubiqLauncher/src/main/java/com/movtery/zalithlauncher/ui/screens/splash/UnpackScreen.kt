@@ -92,7 +92,7 @@ fun UnpackScreen(
 
                 Text(
                     text = "CUBIQ SETUP",
-                    color = Color(0xFF55FF55),
+                    color = Color(0xFF2ECC71),
                     fontFamily = MinecraftFontFamily,
                     fontSize = 14.sp,
                     fontWeight = FontWeight.Bold,
@@ -113,7 +113,7 @@ fun UnpackScreen(
                         text = if (installing) {
                             "Extracting Minecraft Java runtimes, LWJGL libraries, and native assets..."
                         } else {
-                            "Cubiq requires unpacking internal Java runtimes (Java 8, 17, 21), LWJGL libraries, and native assets to run Java Edition."
+                            "PJ Launcher requires unpacking internal Java runtimes (Java 8, 17, 21), LWJGL libraries, and native assets to run Java Edition."
                         },
                         color = Color(0xFFC0C0C0),
                         fontFamily = MinecraftFontFamily,
@@ -164,7 +164,7 @@ private fun MinecraftTaskItem(
     val message by item.task.taskMessage.collectAsStateWithLifecycle()
 
     val borderColor = when (state) {
-        InstallableItem.State.FINISHED -> Color(0xFF3C8527)
+        InstallableItem.State.FINISHED -> Color(0xFF1E88E5)
         InstallableItem.State.RUNNING -> Color(0xFF2EB5D6)
         else -> Color(0xFF333333)
     }
@@ -228,7 +228,7 @@ private fun MinecraftTaskItem(
                     message?.let { taskMsg ->
                         Text(
                             text = taskMsg,
-                            color = Color(0xFF55FF55),
+                            color = Color(0xFF2ECC71),
                             fontFamily = MinecraftFontFamily,
                             fontSize = 10.5.sp,
                             maxLines = 1
@@ -239,7 +239,7 @@ private fun MinecraftTaskItem(
                         modifier = Modifier
                             .fillMaxWidth()
                             .height(3.dp),
-                        color = Color(0xFF55FF55),
+                        color = Color(0xFF2ECC71),
                         trackColor = Color(0xFF1E381A)
                     )
                 }
@@ -267,14 +267,14 @@ private fun MinecraftTaskItem(
                 InstallableItem.State.RUNNING -> {
                     MinecraftPixelDonutSpinner(
                         size = 20.dp,
-                        baseColor = Color(0xFF55FF55)
+                        baseColor = Color(0xFF2ECC71)
                     )
                 }
                 InstallableItem.State.FINISHED -> {
                     Icon(
                         painter = painterResource(R.drawable.ic_check),
                         contentDescription = null,
-                        tint = Color(0xFF55FF55),
+                        tint = Color(0xFF2ECC71),
                         modifier = Modifier.size(22.dp)
                     )
                 }

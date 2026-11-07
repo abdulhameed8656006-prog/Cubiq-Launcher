@@ -72,8 +72,8 @@ private const val TAG = "AssetsCommonElements"
 @Composable
 fun InstalledModBadge(
     modifier: Modifier = Modifier,
-    color: Color = Color(0xFF3C8527),
-    checkColor: Color = Color(0xFF55FF55),
+    color: Color = Color(0xFF1E88E5),
+    checkColor: Color = Color(0xFF2ECC71),
     size: Dp = 14.dp
 ) {
     Box(
@@ -150,7 +150,7 @@ fun ClassesIdentifier(
     modifier: Modifier = Modifier,
     iconSize: Dp = 12.dp,
     color: Color = Color(0xFF262628),
-    contentColor: Color = Color(0xFF55FF55),
+    contentColor: Color = Color(0xFF2ECC71),
     shape: Shape = RoundedCornerShape(2.dp),
     textStyle: TextStyle = MaterialTheme.typography.labelSmall.copy(fontSize = 10.sp, fontFamily = com.movtery.zalithlauncher.ui.theme.MinecraftFontFamily)
 ) {
